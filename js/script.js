@@ -34,8 +34,10 @@ function Pet(name, type, age, gender, breed, temperament, demeanor) {
 
 }
 
+// register pet to the HTML form
+function register() {
 
-function displayInfo() {
+
 
 }
 
