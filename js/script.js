@@ -34,15 +34,19 @@ function Pet(name, type, age, gender, breed, temperament, demeanor) {
 
 }
 
-let Jake = new Pet('Jake', 'dog', '13', 'male', 'lab', 'calm', 'outgoing');
-PetsRus.pets.push(Jake);
-
 
 function displayInfo() {
 
 }
 
 function init() {
+    let Jake = new Pet('Jake', 'dog', '13', 'male', 'lab', 'calm', 'outgoing');
+    let Ivy = new Pet('Ivy', 'dog', '3', 'female', 'mix', 'hyper', 'guarded');
+    let Penny = new Pet('Penny', 'dog', '10', 'female', 'Australian Cattle', 'loving', 'beautiful soul');
+    PetsRus.pets.push(Jake, Ivy, Penny);
     console.log(PetsRus.pets[0].name);
+    console.log(PetsRus.pets[1].name);
+    console.log(PetsRus.pets[2].name);
+
 }
 window.onload = init;
