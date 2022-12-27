@@ -51,21 +51,26 @@ function register() {
     PetsRus.pets.push(newPet);
     console.log(newPet);
     console.log(PetsRus.pets);
-
-
-
-
+    clearForm();
+}
+function clearForm() {
+    inputName.value = "";
+    inputAge.value = "";
+    inputType.value = "";
+    inputGender.value = "";
+    inputBreed.value = "";
+    inputTemperament.value = "";
+    inputService.value = "";
 
 }
+
 
 function init() {
     let Jake = new Pet('Jake', 'dog', '13', 'male', 'lab', 'calm', 'nails');
     let Ivy = new Pet('Ivy', 'dog', '3', 'female', 'mix', 'hyper', 'grooming');
     let Penny = new Pet('Penny', 'dog', '10', 'female', 'Australian Cattle', 'loving', 'check-up');
     PetsRus.pets.push(Jake, Ivy, Penny);
-    // console.log(PetsRus.pets[0].name);
-    // console.log(PetsRus.pets[1].name);
-    // console.log(PetsRus.pets[2].name);
+
 
 }
 window.onload = init;
